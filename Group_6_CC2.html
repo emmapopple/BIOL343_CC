@@ -1619,11 +1619,6 @@ below, import it with <code>read.csv()</code>, keep the appropriate rows
 and columns (as you did in Coding Challenge 1), and add the
 <code>ovary_area</code> column (Chapter 3, <em>New Columns</em>). Save
 the cleaned data as <code>cc1_data</code>.</p>
-<pre class="r"><code>cc1_data1 &lt;- read.csv(&quot;data/A1_Data_Excel.csv&quot;)
-cc1_data &lt;- cc1_data1[1:46, 1:8]
-
-cc1_data$ovary_area &lt;- cc1_data$ovary_width * 
-    cc1_data$ovary_height</code></pre>
 <p>Now document the inspection commands you used (<code>class()</code>,
 <code>dim()</code>, <code>str()</code>, <code>head()</code>,
 <code>tail()</code>) in the chunk below. Add the chunk option that

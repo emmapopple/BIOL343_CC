@@ -46,9 +46,8 @@ Write the group members as an **ordered list** (Chapter 5, *Lists*). For each me
 
 The chunk below sets the default options for every other chunk in the document. Add the **chunk option** (Chapter 5, *Code Chunk Arguments*) that runs it without showing either the code or any output in the knitted report.
 
-```{r setup, include = FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-getwd()
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message=FALSE)
 ```
 
 # Data dictionary
@@ -79,7 +78,7 @@ cc1_data$ovary_area <- cc1_data$ovary_width *
 
 Now document the inspection commands you used (`class()`, `dim()`, `str()`, `head()`, `tail()`) in the chunk below. Add the chunk option that **shows this code in the report but does not run it**, so that the reader can see what you checked without pages of output.
 
-```{r inspect, eval=FALSE}
+```{r inspect, echo=TRUE, eval=FALSE}
 class(cc1_data)
 
 dim(cc1_data)
@@ -112,8 +111,7 @@ area_means <- aggregate(ovary_area ~ population_type, data = cc1_data, mean)
 
 **b.** Display `area_means` with `kable()` from the `knitr` package (Chapter 5, *Dynamic Tables*), including a `caption`. This chunk should show the **table but not the code**.
 
-```{r area-table, echo=FALSE, message=FALSE}
-library(dplyr)
+```{r area-table}
 library(knitr)
 
 kable(area_means, 
@@ -125,7 +123,7 @@ kable(area_means,
 
 Make a histogram of `ovary_area` with `ggplot()` + `geom_histogram()` (Chapter 4), choosing a sensible `binwidth` and using `facet_wrap()` to give each `population_type` its own panel, `labs()` for axis labels with units and a title, and `theme_classic()` (Chapter 7). This chunk should show the **graph but not the code**, and it should not print package start-up messages (see the chunk header used under *Embed Graphs* in Chapter 5).
 
-```{r area-histogram, echo=FALSE, message=FALSE}
+```{r area-histogram}
 library(ggplot2)
 ggplot(cc1_data, aes(x=ovary_area)) + 
     geom_histogram(binwidth=0.5) +
