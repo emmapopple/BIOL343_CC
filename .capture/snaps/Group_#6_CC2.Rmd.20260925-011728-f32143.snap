@@ -14,10 +14,11 @@ output:
 
 Copy and paste this into your R Console to start positpal, but replace `FILENAME.Rmd` with the name you are going to use for the .R or .Rmd file you are going to upload (for this challenge, rename the template first, e.g. `Group_#_CC2.Rmd`, and use that exact name). **Do not include it as a code chunk.**
 
-
+``` {r, echo}
+install.packages("remotes")
 remotes::install_url("https://quantitative.bio/downloads/positpal.tar.gz", upgrade = "never")
 positpal::start("Group_#6_CC2.Rmd")
-
+```
 
 Before you run it: open the project folder for this challenge in Positron (*File → Open Folder…*) so that it is your working directory, save this file in that folder under the name you will upload, and check that autosave is on (*File → Auto Save*). The first time you use positpal on a computer, `start()` will ask you to run `positpal::accept_eula()` once; do that, then run the `start()` line again. After a few minutes of work, check in the Explorer pane that the `.capture/snaps` folder inside your project is filling up with files. If it is not, or if `start()` refuses to record, run `positpal::doctor("FILENAME.Rmd")` and bring the output to tutorial or office hours. Run the `start()` line again at the start of every session you spend on this file.
 
@@ -79,7 +80,7 @@ cc1_data$ovary_area <- cc1_data$ovary_width *
 
 Now document the inspection commands you used (`class()`, `dim()`, `str()`, `head()`, `tail()`) in the chunk below. Add the chunk option that **shows this code in the report but does not run it**, so that the reader can see what you checked without pages of output.
 
-```{r inspect, eval=FALSE}
+```{r inspect}
 class(cc1_data)
 
 dim(cc1_data)
@@ -112,7 +113,7 @@ area_means <- aggregate(ovary_area ~ population_type, data = cc1_data, mean)
 
 **b.** Display `area_means` with `kable()` from the `knitr` package (Chapter 5, *Dynamic Tables*), including a `caption`. This chunk should show the **table but not the code**.
 
-```{r area-table, echo=FALSE}
+```{r area-table}
 library(dplyr)
 library(knitr)
 
@@ -142,9 +143,9 @@ ggplot(cc1_data, aes(x=ovary_area)) +
 
 Embed an image of the study species, *Solanum pimpinellifolium*, with Markdown image syntax (Chapter 5, *Images*). Save the image file in an `images` folder inside your project folder and use a **relative path**, exactly as the chapter does, so that the image is pushed to GitHub with everything else. The text in the square brackets is the caption. Below the image, give the **source** as a Markdown link to the page you took it from.
 
-![*Solanum pimpinellifolium*](./Solanum_pimpinellifolium_-_C_1.jpg)
+![*Solanum pimpinellifolium*](./Hydroponic_g13.png)
 
-Source: [Little Red Wagon Nursery](https://littleredwagonnativenursery.com/products/everglades-tomato-solanum-pimpinellifolium)
+Source: 
 
 # Repository
 

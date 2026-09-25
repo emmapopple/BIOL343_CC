@@ -15,9 +15,10 @@ output:
 Copy and paste this into your R Console to start positpal, but replace `FILENAME.Rmd` with the name you are going to use for the .R or .Rmd file you are going to upload (for this challenge, rename the template first, e.g. `Group_#_CC2.Rmd`, and use that exact name). **Do not include it as a code chunk.**
 
 
+```{r, include=FALSE}
 remotes::install_url("https://quantitative.bio/downloads/positpal.tar.gz", upgrade = "never")
-positpal::start("Group_#6_CC2.Rmd")
-
+positpal::start("Group_6_CC2.Rmd")
+```
 
 Before you run it: open the project folder for this challenge in Positron (*File → Open Folder…*) so that it is your working directory, save this file in that folder under the name you will upload, and check that autosave is on (*File → Auto Save*). The first time you use positpal on a computer, `start()` will ask you to run `positpal::accept_eula()` once; do that, then run the `start()` line again. After a few minutes of work, check in the Explorer pane that the `.capture/snaps` folder inside your project is filling up with files. If it is not, or if `start()` refuses to record, run `positpal::doctor("FILENAME.Rmd")` and bring the output to tutorial or office hours. Run the `start()` line again at the start of every session you spend on this file.
 
@@ -34,13 +35,13 @@ Write the group members as an **ordered list** (Chapter 5, *Lists*). For each me
 1. **Victoria Gutierrez** — 20517120
     + [BIOL343_Victoria-GA_CC2](https://github.com/Victoria-GA/BIOL343_TUT02-CC2_VictoriaGutierrez)
 1. **Margo Kaminska** - 20449041
-    + [BIOL343_CC](https://github.com/margo-kaminska/BIOL343)
+    + [BIOL343_CC](https://github.com/margo-kaminska/BIOL343)
 1. **Sabrina Baker** — 20449887
-    + [BIOL343_CC](https://github.com/sabrina-baker/BIOL343_CC02)
+    + [BIOL343_CC](https://github.com/sabrina-baker/BIOL343_CC02)
 1. **Kaylee Ellwood** - 20391007
     + [BIOL343_CC2](https://github.com/kaylee61/BIOL343_CC2.git)
-1. **Emma Popple** — 20467453
-    + [BIOL343_CC](https://github.com/emmapopple/BIOL343_CC)
+1. **Tea Hope** — 
+    + [BIOL343_CC](https://)
 
 # Setup chunk
 
@@ -55,7 +56,7 @@ getwd()
 
 Write a **Markdown table** (Chapter 5, *Tables*) with three columns — variable, description, units — and one row for each of these variables from the Coding Challenge 1 dataset: `population_type`, `ovary_width`, `ovary_height`, `flower_number`. Use the *pipes and dashes* format from the chapter, not R code.
 
-Tables
+Markdown Table of Coding Challenge 1 dataset
 -------------------------------
 variable | description | units
 ---------|-------------|---------
@@ -112,7 +113,7 @@ area_means <- aggregate(ovary_area ~ population_type, data = cc1_data, mean)
 
 **b.** Display `area_means` with `kable()` from the `knitr` package (Chapter 5, *Dynamic Tables*), including a `caption`. This chunk should show the **table but not the code**.
 
-```{r area-table, echo=FALSE}
+```{r area-table, echo=FALSE, message=FALSE}
 library(dplyr)
 library(knitr)
 
