@@ -7,7 +7,7 @@ output:
         toc: true 
         number_sections: true 
         toc_float:
-            collapsed: false 
+        collapsed: false 
 ---
 
 # DO THIS FIRST {-}
@@ -32,14 +32,14 @@ Write the group members as an **ordered list** (Chapter 5, *Lists*). For each me
 
 1. **Emma Popple** — 20467453
     + [BIOL343_CC](https://github.com/emmapopple/BIOL343_CC)
-1. **Victoria Gutierrez** — 20517120
-    + [BIOL343_Victoria-GA_CC2](https://github.com/Victoria-GA/BIOL343_TUT02-CC2_VictoriaGutierrez)
-1. **Margo Kaminska** - 20449041
-    + [BIOL343_CC](https://github.com/margo-kaminska/BIOL343)
-1. **Sabrina Baker** — 20449887
-    + [BIOL343_CC](https://github.com/sabrina-baker/BIOL343_CC02)
-1. **Kaylee Ellwood** - 20391007
-    + [BIOL343_CC2](https://github.com/kaylee61/BIOL343_CC2.git)
+1. **Emma Popple** — 20467453
+    + [BIOL343_CC](https://github.com/emmapopple/BIOL343_CC)
+1. **Emma Popple** — 20467453
+    + [BIOL343_CC](https://github.com/emmapopple/BIOL343_CC)
+1. **Emma Popple** — 20467453
+    + [BIOL343_CC](https://github.com/emmapopple/BIOL343_CC)
+1. **Emma Popple** — 20467453
+    + [BIOL343_CC](https://github.com/emmapopple/BIOL343_CC)
 1. **Emma Popple** — 20467453
     + [BIOL343_CC](https://github.com/emmapopple/BIOL343_CC)
 
@@ -143,7 +143,7 @@ ggplot(cc1_data, aes(x=ovary_area)) +
 
 Embed an image of the study species, *Solanum pimpinellifolium*, with Markdown image syntax (Chapter 5, *Images*). Save the image file in an `images` folder inside your project folder and use a **relative path**, exactly as the chapter does, so that the image is pushed to GitHub with everything else. The text in the square brackets is the caption. Below the image, give the **source** as a Markdown link to the page you took it from.
 
-![*Solanum pimpinellifolium*](./Hydroponic_g13.png)
+(image here)
 
 Source: 
 

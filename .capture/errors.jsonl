@@ -1,0 +1,12 @@
+{"chunk":null,"ts":"2026-09-24T16:55:24Z","pid":70243,"engine":"r","severity":"error","render":false,"text":"## Error: object 'A1_Data_Excel' not found"}
+{"chunk":null,"ts":"2026-09-24T16:55:32Z","pid":70243,"engine":"r","severity":"error","render":false,"text":"## Error: object 'A1_Data_Excel.csv' not found"}
+{"chunk":null,"ts":"2026-09-24T16:55:54Z","pid":70243,"engine":"r","severity":"error","render":false,"text":"## Error: object 'A1_Data_Excel.csv' not found"}
+{"chunk":null,"ts":"2026-09-24T16:56:30Z","pid":70243,"engine":"r","severity":"error","render":false,"text":"## Error: object 'A1_Data_Excel.csv' not found"}
+{"chunk":null,"ts":"2026-09-24T17:30:31Z","pid":70243,"engine":"r","severity":"error","render":false,"text":"## Error: length of 'dimnames' [2] not equal to array extent"}
+{"chunk":null,"ts":"2026-09-24T17:32:30Z","pid":70243,"engine":"r","severity":"error","render":false,"text":"## Error: object 'ggplot2' not found"}
+{"chunk":null,"ts":"2026-09-24T17:39:24Z","pid":70243,"engine":"r","severity":"error","render":false,"text":"## Error: Syntax error: unexpected symbol"}
+{"chunk":null,"ts":"2026-09-24T17:39:29Z","pid":70243,"engine":"r","severity":"error","render":false,"text":"## Error: Syntax error: unexpected symbol"}
+{"chunk":null,"ts":"2026-09-24T17:40:15Z","pid":70243,"engine":"r","severity":"error","render":false,"text":"## Error: could not find function \"ggplot\""}
+{"chunk":null,"ts":"2026-09-24T17:40:17Z","pid":70243,"engine":"r","severity":"error","render":false,"text":"## Error: could not find function \"ggplot\""}
+{"chunk":null,"ts":"2026-09-24T17:46:30Z","pid":70243,"engine":"r","severity":"error","render":false,"text":"## Error: toc_float must be a logical or a list with options"}
+{"chunk":null,"ts":"2026-09-24T17:47:36Z","pid":70243,"engine":"r","severity":"error","render":false,"text":"## Error: Syntax error: unexpected '>'"}
