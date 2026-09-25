@@ -133,7 +133,7 @@ ggplot(cc1_data, aes(x=ovary_area)) +
     facet_wrap(~population_type) +
     labs(
         title = "Distribution of Ovary Area by Population Type", 
-        x = "Ovary Area (mm²)",
+        x = "Ovary Area (mm^2)",
         y = "Frequency"
     ) +
     theme_classic()
