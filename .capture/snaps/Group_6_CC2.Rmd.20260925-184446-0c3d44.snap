@@ -14,6 +14,7 @@ output:
 
 Copy and paste this into your R Console to start positpal, but replace `FILENAME.Rmd` with the name you are going to use for the .R or .Rmd file you are going to upload (for this challenge, rename the template first, e.g. `Group_#_CC2.Rmd`, and use that exact name). **Do not include it as a code chunk.**
 
+
 ```
 remotes::install_url("https://quantitative.bio/downloads/positpal.tar.gz", upgrade = "never")
 positpal::start("Group_6_CC2.Rmd")
@@ -142,7 +143,7 @@ ggplot(cc1_data, aes(x=ovary_area)) +
 
 Embed an image of the study species, *Solanum pimpinellifolium*, with Markdown image syntax (Chapter 5, *Images*). Save the image file in an `images` folder inside your project folder and use a **relative path**, exactly as the chapter does, so that the image is pushed to GitHub with everything else. The text in the square brackets is the caption. Below the image, give the **source** as a Markdown link to the page you took it from.
 
-![*Solanum pimpinellifolium*, or currant tomato is a wild species of tomato native to Ecuador and Peru](./images/Solanum_pimpinellifolium_-_C_1.jpg)
+![*Solanum pimpinellifolium*](./images/Solanum_pimpinellifolium_-_C_1.jpg)
 
 Source: [Little Red Wagon Nursery](https://littleredwagonnativenursery.com/products/everglades-tomato-solanum-pimpinellifolium)
 
