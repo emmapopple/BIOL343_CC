@@ -11,3 +11,4 @@
 {"chunk":null,"ts":"2026-09-24T17:46:30Z","pid":70243,"engine":"r","severity":"error","render":false,"text":"## Error: toc_float must be a logical or a list with options"}
 {"chunk":null,"ts":"2026-09-24T17:47:36Z","pid":70243,"engine":"r","severity":"error","render":false,"text":"## Error: Syntax error: unexpected '>'"}
 {"chunk":null,"ts":"2026-09-25T01:38:57Z","pid":94945,"engine":"r","severity":"error","render":false,"text":"## Error: Duplicate chunk label 'setup', which has been used for the chunk:\nknitr::opts_chunk$set(echo = TRUE)\ngetwd()"}
+{"chunk":null,"ts":"2026-09-25T01:46:51Z","pid":94945,"engine":"r","severity":"error","render":false,"text":"## Error: Duplicate chunk label 'setup', which has been used for the chunk:\nknitr::opts_chunk$set(echo = TRUE)\ngetwd()"}

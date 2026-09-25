@@ -5,8 +5,8 @@ date: "`r format(Sys.Date(), '%d %B %Y')`"
 output:
     html_document:
         toc: true
-        number_sections: true
-        toc_float: 
+            number_sections: true
+            toc_float: 
             collapsed: false
 ---
 

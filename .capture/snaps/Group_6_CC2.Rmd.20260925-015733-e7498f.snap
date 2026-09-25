@@ -10,6 +10,8 @@ output:
             collapsed: false
 ---
 
+#on
+
 # DO THIS FIRST {-}
 
 Copy and paste this into your R Console to start positpal, but replace `FILENAME.Rmd` with the name you are going to use for the .R or .Rmd file you are going to upload (for this challenge, rename the template first, e.g. `Group_#_CC2.Rmd`, and use that exact name). **Do not include it as a code chunk.**
